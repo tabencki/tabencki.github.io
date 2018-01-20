@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Embedded Style Sheet Example-Tabencki Edits</title>
+
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway" rel="stylesheet">
+
+<style>
+
+body {
+     background-color: #CECFD5;
+     text-align:center; /* Hack for IE/Win */
+     margin-top: 10px;
+     }
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 160px;
+}
+
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(./assets/link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(./assets/go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(./assets/home.png) no-repeat 5px 52%;
+}
+
+
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+
+
+.content {
+	width:950px;
+
+	margin: 0px auto; padding: 10px;
+        text-align: left; /* Counteract to IE/Win Hack */
+
+	background-color:#eee;
+         }
+
+
+
+.pol {
+	 text-align: center;
+    font-size: 24px;
+	   }
+
+
+h1 {
+
+font:  24pt 'Droid Serif', serif;
+color: #DC143C;
+text-align: center;
+}
+
+
+h2 {
+
+font:  20pt Palatino;
+color: #FF00FF;
+text-align: left;
+}
+
+
+h3 {
+
+font-family: Comic Sans MS;
+font-size: 18pt;
+color: #4169E1;
+text-align: right;
+}
+
+h4 {
+
+font-family: 'Raleway', sans-serif;
+font-size: 22pt;
+color: #32CD32;
+text-align: left;
+}
+
+
+p.left  {
+
+font-family: 'Arial';
+font-size: 12pt;
+color: #FFA500;
+text-align: justify;
+font-weight: bold;
+text-indent: 1.25in;
+}
+
+
+p.right  {
+
+font-family: 'Raleway', 'sans-serif', 'times new roman', 'san-serif';
+font-size: 10pt;
+color: #FFF5EE;
+text-align: center;
+background-color: #313878;
+border-style: double;
+border-color: #a020f0;
+padding: 10em;
+}
+
+p.ital  {
+
+font-family: 'Trebuchet MS';
+font-size: 12pt;
+color: #9c3ece;
+text-align: justify;
+font-weight: bold;
+font-style: italic;
+}
+
+p.jt  {
+
+font-family: 'georgia';
+font-size: 8pt;
+color: #8B8878;
+text-align: left;
+font-style: italic;
+}
+
+a {
+
+color: #0000ff;
+text-decoration: none;
+}
+
+a:hover { color:#8f0052;
+text-decoration: underline;
+background-color: yellow;
+}
+
+.center {text-align: center;}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="content">
+
+<section>
+
+
+
+  <ul id="mainNav">
+
+    <li><a href="embedded.html" target="_self" id="homeLink">Embedded Style Sheet</a></li>
+    <li><a href="linked1.html" target="_self">Linked Style Sheet 1</a></li>
+    <li><a href="linked2.html" target="_self">Linked Style Sheet 2</a></li>
+
+  </ul>
+
+
+
+<br>
+
+<h1>JT'S Embedded Style Sheet Example</h1>
+
+
+<p class="pol">Possibly relevant items of discussion</p>
+
+<h2>Hipster Ipsum</h2>
+
+
+<p class="left">
+
+Paleo fingerstache in try-hard, cliche you probably haven't heard of them pickled kitsch do ad meditation pug. Ullamco minim heirloom, prism aute beard ut actually ramps. Reprehenderit yuccie sunt tattooed hexagon meh keffiyeh mollit exercitation. Aliquip hashtag offal ut cred dolore. Stumptown pok pok slow-carb, letterpress asymmetrical sartorial succulents wayfarers cornhole kitsch woke aute tempor. Wolf fixie biodiesel hella, meh put a bird on it gochujang franzen est la croix. Pabst you probably haven't heard of them shoreditch aute. Single-origin coffee dolore la croix actually, before they sold out pariatur godard tempor mustache activated charcoal kogi ipsum scenester. Vice affogato lorem anim DIY, est jean shorts readymade literally elit. Bushwick green juice tacos, knausgaard la croix meditation chicharrones.
+<br>
+<a href="https://hipsum.co/">Click here</a>
+for Hipster Ipsum, the best ipsum there is!.</p>
+
+
+<h3>A hint of Shakespeare</h3>
+
+<p class="right">
+
+  To be, or not to be, that is the question:
+  Whether 'tis nobler in the mind to suffer
+  The slings and arrows of outrageous fortune,
+  Or to take Arms against a Sea of troubles,
+  And by opposing end them: to die, to sleep
+  No more; and by a sleep, to say we end
+  the heart-ache, and the thousand natural shocks
+  that Flesh is heir to? 'Tis a consummation
+  devoutly to be wished. To die, to sleep,
+  To sleep, perchance to Dream; aye, there's the rub,
+  for in that sleep of death, what dreams may come,
+  when we have shuffled off this mortal coil,
+  must give us pause. There's the respect
+  that makes Calamity of so long life:
+  For who would bear the Whips and Scorns of time,
+  the Oppressor's wrong, the proud man's Contumely, [F: poor]
+  the pangs of despised Love, the Law’s delay, [F: disprized]
+  the insolence of Office, and the spurns
+  that patient merit of the unworthy takes,
+  when he himself might his Quietus make
+  with a bare Bodkin? Who would Fardels bear, [F: these Fardels]
+  to grunt and sweat under a weary life,
+  but that the dread of something after death,
+  the undiscovered country, from whose bourn
+  no traveller returns, puzzles the will,
+  and makes us rather bear those ills we have,
+  than fly to others that we know not of.
+  Thus conscience does make cowards of us all...
+<br>
+<a href="https://en.wikipedia.org/wiki/To_be,_or_not_to_be">Click here</a> for the rest of this soliloquy.
+</p>
+
+<h4>Bacon Ipsum</h4>
+
+<p class="ital">
+Spicy jalapeno bacon ipsum dolor amet ground round cow capicola rump strip steak picanha, ball tip boudin pork. Pork belly flank chuck ball tip hamburger landjaeger. Ham hock jerky pork sausage, pig bacon cow beef ribs tongue kevin ham fatback pancetta flank. Jerky ham spare ribs, tri-tip chicken tail boudin drumstick frankfurter flank kevin capicola. Spare ribs ham tongue, cow shank meatloaf ground round flank leberkas fatback pork belly doner meatball. Tri-tip pork belly bacon ribeye cupim turducken.
+</p>
+
+<h4>Cat Ipsum-my fave!</h4>
+
+<p class="jt">
+Meow. Munch on tasty moths meow loudly just to annoy owners so attack feet spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce hiss at vacuum cleaner roll over and sun my belly scamper. Ask for petting. Hide when guests come over step on your keyboard while you're gaming and then turn in a circle for cat is love, cat is life and touch water with paw then recoil in horror. Wack the mini furry mouse paw at your fat belly but pelt around the house and up and down stairs chasing phantoms. Mark territory stand in front of the computer screen meow for food, then when human fills food dish, take a few bites of food and continue meowing for my slave human didn't give me any food so i pooped on the floor fall over dead (not really but gets sypathy) nap all day meowing non stop for food. Where is my slave? I'm getting hungry play riveting piece on synthesizer keyboard soft kitty warm kitty little ball of furr and run in circles.
+</p>
+
+</section>
+
+</div>
+
+<footer>
+
+<p class="center">
+<br>
+<a href="linked1.html">Click here to navigate to the linked1 page</a>
+<br>
+
+<a href="https://jigsaw.w3.org/css-validator/check/referer">
+<img style="border:5;width:64px;height:64px" src="./assets/html5_badge.png"
+alt="HTML5"></a>
+
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!">
+    </a>
+</p>
+
+
+</footer>
+
+</body>
+</html>

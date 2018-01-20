@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JT Tabencki |HW5 - videos, audio, and animations</title>
+
+<!-- meta tags -->
+<meta name="keywords" content="JT Tabencki">
+<meta name="description" content="Animations & Sounds!">
+<link rel="stylesheet" type="text/css" href="./assets/hw5/hw5.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="banner">
+      <img src="./assets/banner.jpg" width="800" height="160" alt="JT Tabencki" title="Tabencki">
+    </div>
+<!-- navigation -->
+  <nav id="navigation">
+    <ul>
+      <li class="navigation"><a href="index.html">HW 1</a></li>
+      <li class="navigation"><a href="embedded.html">HW 2</a></li>
+      <li class="navigation"><a href="hw3.html">HW 3</a></li>
+      <li class="navigation"><a href="hw4.html">HW 4</a></li>
+      <li class="current"><a href="">HW 5</a></li>
+      <li class="navigation"><a href="hw6.html">HW 6</a></li>
+      <li class="navigation"><a href="hw7.html">HW 7</a></li>
+      <li class="navigation"><a href="hw8.html">HW 8</a></li>
+      <li class="navigation"><a href="hw9.html">HW 9</a></li>
+   </ul>
+  </nav>
+
+    <div id="content">
+  <!-- Multimedia table -->
+  <h1>Multimedia Examples!</h1>
+  <table>
+    <!-- row 1: audio & video -->
+  <tr>
+    <td>
+        <div id="media">
+    <h3>Darkest Child Kevin MacLeod</h3>
+    <br><br>
+<audio controls>
+<source src="./assets/hw5/Darkest-Child.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<br><br>
+<p>Darkest Child Kevin MacLeod (incompetech.com)</p>
+<p>Licensed under Creative Commons: By Attribution 3.0
+<a href="http://creativecommons.org/licenses/by/3.0/">License</a></p>
+</div>
+</td>
+<td>
+    <div id="media2">
+<h3>Hungry Kittehs are Hungry</h3>
+  <br>
+  <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br><br>
+    <video id="video1" width="480">
+      <source src="./assets/hw5/hungry-kittehs.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <script>
+    var myVideo = document.getElementById("video1");
+
+    function playPause() {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+    function makeBig() {
+        myVideo.width = 560;
+    }
+    function makeSmall() {
+        myVideo.width = 320;
+    }
+    function makeNormal() {
+        myVideo.width = 480;
+    }
+    </script>
+<p>Dump and Box, .mp4, 2.7mb</p>
+<br><br>
+</div>
+</td>
+</tr>
+<!-- row 2: Animations -->
+<tr>
+<td>
+  <BR>
+  <h3> Animated GIF</h3>
+  <br><BR>
+    <div id="anime_box">
+  <img src="./assets/hw5/kitteh.gif" alt="box-dump-animtion">
+</div>
+</td>
+<!-- CSS Animation -->
+<td>
+  <br>
+<h3>CSS3 Animation</h3>
+<br><br>
+<div id="anime_box2">
+<div id="anime">
+  <!-- This is the box that animates -->
+</div>
+</div>
+</td>
+</tr>
+
+<!-- row 3: iframes -->
+<tr>
+<td>
+  <div id="frame">
+<h3>Harold's iframe show</h3>
+
+<a href="./assets/hw5/harold.jpg" target="ifr" onclick="window.ifd.location='https://en.wikipedia.org/wiki/Ewok'"><strong>Harold</strong></a>
+|
+<a  href="./assets/hw5/china1.jpg" target="ifr" onclick="window.ifd.location='https://en.wikipedia.org/wiki/Tiananmen_Square'"><strong>Tiananmen Square</strong></a>
+|
+<a  href="./assets/hw5/china.jpg" target="ifr" onclick="window.ifd.location='https://en.wikipedia.org/wiki/Great_wall_of_china'"><strong>Great Wall</strong></a>
+
+<br><br>
+
+<iframe  src="https://fog.ccsf.edu/~srubin/ifrp.htm" width="400" height="457" name="ifr">
+</iframe>
+</div>
+</td>
+<td>
+  <div id="frame2">
+<h3>Pertient Information:</h3>
+<iframe src="./assets/hw5/star-wars.jpg" width="600" height="514" name="ifd">
+</iframe>
+</div>
+</td>
+</tr>
+</table>
+</div>
+  </div>
+  <footer>
+  <div id="email">
+      <a href="https://validator.w3.org/check?uri=referer"> <img style="border:0;width:64px;height:64px" src="./assets/html5_badge.png"
+                      alt="HTML5"></a>
+                      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                  <img style="border:0;width:88px;height:31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                  alt="Valid CSS!"></a>
+
+      | <a href="mailto:jtabenck@mail.ccsf.edu">JT Tabencki</a> | &copy; 2017
+
+      <script type="text/javascript">
+      var dateModified = document.lastModified;
+      mydate = dateModified.slice(0,16);
+      document.write("Last updated: " + mydate);
+      </script>
+      </div>
+    </footer>
+
+
+
+  </html>

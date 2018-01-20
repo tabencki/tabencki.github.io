@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Asap+Condensed|Droid+Serif|Roboto+Condensed);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* your styling */
+body {
+background-image: url('washed-out.jpg');
+margin: 20px 0px; padding: 0px;
+text-align:center; /* Hack for IE/Win */
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 25px;
+padding-bottom: 25px;
+font-family: 'Roboto Condensed',serif;
+}
+
+footer {
+    background-color: #313878;
+    width:auto;
+    height: 74px;
+    color: #ffffff;
+    text-align: center;
+		margin: 0 auto;
+}
+iframe {
+   border: 0px;
+}
+
+.justify {
+  text-align: justify;
+  font-size: 14pt;
+  margin: 20px 20px;
+}
+
+img.right {
+  float: right;
+  margin-left: 10px;
+}
+
+
+
+img.left {
+  float: left;
+  margin-right: 10px;
+}
+h1 {
+font-family: 'Droid Serif', serif;
+  text-align: center;
+  font-style: italic;
+
+}
+
+#main {
+  background-color: #CECFD5;
+  width: 800px;
+  margin: 0 auto;
+}
+#banner {
+    padding-bottom: 20px;
+		margin: 0 auto;
+		width:800px;
+}
+
+#content {
+background-color: #D3D4DB;
+padding-top: 25px;
+width:800px;
+height:auto;
+margin: 0 auto;
+}
+
+/* ~~~~~~~~~ nav ~~~~~~~~~~ */
+
+#navigation {
+	margin: 0px auto;
+	width:750px;
+  background-color: #313878;
+  padding: 10px;
+  text-align: center;
+}
+	#navigation ul {
+		margin: 0px auto;
+		width:750px;
+		list-style: none;
+		font-size: 16px;
+	}
+		#navigation li {
+      display: inline;
+		}
+			#navigation li a {
+				background: #313878;
+				padding: 10px 10px;
+				display: block;
+				color: #ffffff;
+				text-decoration: none;
+        display: inline;
+
+			}
+			#navigation li.current a {
+				background: #787C9E;
+			}
+			#navigation li a:hover {
+				color: #D3D5DB;
+			}
+
+/* ~~~~~~~~~ end nav ~~~~~~~~~~ */
+
+
+#email a:link, #email a:visited
+			{
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+#email a:hover, #email a:active
+			{
+				text-decoration: underline;
+				color: #D3D5DB;
+}

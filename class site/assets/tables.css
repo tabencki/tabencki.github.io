@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Asap+Condensed|Droid+Serif|Roboto+Condensed);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* your styling */
+body {
+background-color: #C4CED6;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+footer {
+    background-color: #313878;
+    width:auto;
+    height: 74px;
+    color: #ffffff;
+    text-align: center;
+		margin: 0 auto;
+
+}
+
+/* ~~~~~~~~~ table ~~~~~~~~~~ */
+table {
+	font-family: 'Roboto Condensed', sans-serif;
+	border-collapse: collapse; width: auto;
+	margin-left: auto; margin-right: auto;
+}
+table,th,td {border: 2px solid black;}
+td {height:65px; text-align:left;}
+th.outer {background-color:#3D6D93;}
+td{background-color:#C4CED6;}
+td.odd {background-color:#EEF1F4;}
+td.even {background-color:#B9D0E8;}
+
+
+h1 {
+font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+
+#main {
+  background-color: #CECFD5;
+  width: 800px;
+  margin: 0 auto;
+}
+#banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+		margin: 0 auto;
+		width:800px;
+}
+
+#content {
+background-color: #D3D4DB;
+padding-top: 25px;
+width:800px;
+height:auto;
+margin: 0 auto;
+}
+
+/* ~~~~~~~~~ nav ~~~~~~~~~~ */
+
+#navigation {
+	margin: 0px auto;
+	width:750px;
+  background-color: #313878;
+  padding: 10px;
+  text-align: center;
+}
+	#navigation ul {
+		margin: 0px auto;
+		width:750px;
+		list-style: none;
+		font-size: 16px;
+	}
+		#navigation li {
+      display: inline;
+		}
+			#navigation li a {
+				background: #313878;
+				padding: 10px 10px;
+				display: block;
+				color: #ffffff;
+				text-decoration: none;
+        display: inline;
+
+			}
+			#navigation li.current a {
+				background: #787C9E;
+			}
+			#navigation li a:hover {
+				color: #D3D5DB;
+			}
+
+/* ~~~~~~~~~ end nav ~~~~~~~~~~ */
+
+
+#email a:link, #email a:visited
+			{
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+#email a:hover, #email a:active
+			{
+				text-decoration: underline;
+				color: #D3D5DB;
+}

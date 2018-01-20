@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* your styling */
+body {
+background-color: #FFF;
+font-family: Verdana, Helvetica, Arial;
+width:100%;
+}
+
+footer {
+    background-color: #313878;
+    width:1000px;
+    height: 74px;
+    clear: both;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1, h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+
+#main {
+  background-color: #CECFD5;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#banner {
+    padding-left:100px;
+    padding-right:100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ~~~~~~~~~ nav ~~~~~~~~~~ */
+
+#navigation {
+	margin: 0px auto;
+	left:0;
+	width:auto;
+  background-color: #313878;
+  padding: 10px;
+  text-align: center;
+}
+	#navigation ul {
+		margin: 0px auto;
+		width:800px;
+		list-style: none;
+		font-size: 16px;
+	}
+		#navigation li {
+      display: inline;
+		}
+			#navigation li a {
+				background: #313878;
+				padding: 10px 20px;
+				display: block;
+				color: #ffffff;
+				text-decoration: none;
+        display: inline;
+
+			}
+			#navigation li.current a {
+				background: #787C9E;
+			}
+			#navigation li a:hover {
+				color: #D3D5DB;
+			}
+
+#content {
+background-color: #D3D4DB;
+padding: 10px;
+width:auto;
+height:500px;
+}
+#content li {
+  list-style-type: none;
+  margin: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#content a:link, #content a:visited
+{
+	text-decoration: none;
+	color: #000000;
+}
+#content li a:hover {
+  color: #313878;
+}
+#email a:link, #email a:visited
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#email a:hover, #email a:active
+{
+	text-decoration: underline;
+	color: #D3D5DB;
+}

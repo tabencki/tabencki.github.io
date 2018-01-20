@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Asap+Condensed|Droid+Serif|Roboto+Condensed);
+/* clear default styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* my styling */
+body {
+background-color: #C4CED6;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 25px;
+padding-bottom: 25px;
+font-family: 'Droid Serif', serif;
+width: 1300px;
+}
+footer {
+    background-color: #313878;
+    width:1200px;
+    height: 74px;
+    color: #ffffff;
+    text-align: center;
+		margin: 0 auto;
+}
+iframe {
+   border: 0px;
+   border-radius: 25px;
+}
+table {
+  border-spacing: 10px;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+h1,h2,h3 {
+font-family: 'Droid Serif', serif;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* ~~~~~~~~~ video / audio ~~~~~~~~~~ */
+#media{
+  background-color: #5862bb;
+  color: #FFFFFF;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+  height: 550px;
+}
+#media a:link, #media a:visited
+			{
+				color: #FFFFFF;
+			}
+
+#media2{
+  background-color: #5862bb;
+  color: #FFFFFF;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+  height: 550px;
+}
+
+/* ~~~~~~~~~ Css3 animations ~~~~~~~~~~ */
+
+#anime_box {
+  width: 400px;
+  height: 315px;
+  padding: 10px 10px 10px 10px;
+}
+#anime_box2 {
+  width: 400px;
+  height: 315px;
+}
+#anime  {
+      width: 150px;
+      height: 100px;
+      background-color: #9179de;
+      position: relative;
+      animation-name: boom;
+      animation-duration: 8s;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+      @keyframes boom {
+          0%   {background-color: #9179de; left:400px; top:0px;}
+          25%  {background-color:#7c7156; left:0px; top:0px;}
+          50%  {background-color:#dadbe1; left:0px; top:200px;}
+          75%  {background-color:#968588; left:400px; top:200px;}
+          100% {background-color:#6d6760; left:0px; top:0px;}
+      }
+
+
+/* ~~~~~~~~~ iframe ~~~~~~~~~~ */
+#frame {
+  background-color: #5862bb;
+  color: #FFFFFF;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+  height: 550px;
+
+}
+#frame2 {
+  background-color: #5862bb;
+  color: #FFFFFF;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+  height: 550px;
+
+}
+#frame a:link, #frame a:visited
+			{
+        text-decoration: none;
+				color: #FFFFFF;
+			}
+
+/* ~~~~~~~~~ nav ~~~~~~~~~~ */
+#navigation {
+	margin: 0px auto;
+	width:1160px;
+  background-color: #313878;
+  padding: 10px;
+  text-align: center;
+}
+	#navigation ul {
+		margin: 0px auto;
+		width: 750px;
+		list-style: none;
+		font-size: 16px;
+	}
+		#navigation li {
+      display: inline;
+		}
+			#navigation li a {
+				background: #313878;
+				padding: 10px 10px;
+				display: block;
+				color: #ffffff;
+				text-decoration: none;
+        display: inline;
+
+			}
+			#navigation li.current a {
+				background: #787C9E;
+			}
+			#navigation li a:hover {
+				color: #D3D5DB;
+			}
+
+/* ~~~~~~~~~ end nav ~~~~~~~~~~ */
+
+
+
+#main {
+  background-color: #CECFD6;
+  width: 1200px;
+  margin: 0 auto;
+}
+#banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+		margin: 0 auto;
+		width:800px;
+}
+
+#content {
+background-color: #CECFD6;
+padding-top: 25px;
+width:1100px;
+height:auto;
+margin: 0 auto;
+}
+#email a:link, #email a:visited
+			{
+				text-decoration: none;
+				color: #FFFFFF;
+			}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JT Tabencki |Embedded CSS Examples</title>
+
+<!-- meta tags -->
+<meta name="keywords" content="JT Tabencki">
+<meta name="description" content="HW2 Extra Credit2">
+
+<style type="text/css">
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+  padding: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 160px;
+
+
+}
+#mainNav li {
+  float: left;
+  width: 12em;
+}
+
+#mainNav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 11px;
+  border: 1px dashed #999999;
+  border-bottom: none;
+  display: block;
+  padding: 7px 5px 2px 30px;
+  background: #E7E7E7 url(./assets/link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+  font-weight: bold;
+  background: #B2F511 url(./assets/go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+  background: #E7E7E7 url(./assets/home.png) no-repeat 5px 52%;
+}
+
+
+
+body
+    {
+    background: #1FAAEA; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #1991DF, #3B3F42); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #1991DF, #3B3F42); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #1991DF, #3B3F42); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #1991DF, #3B3F42); /* Standard syntax */
+    }
+
+
+#content {
+
+  width:1000px;
+	margin: 0px auto; padding: 25px;
+  border-radius: 25px;
+	border:10px solid #8B7E66;
+	background-color:#8EADBC;
+         }
+
+footer {
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
+         }
+
+#multicolumn {
+  border-radius: 25px;
+  padding: 15px;
+  border: dashed;
+  background-color: ##696969;
+  column-gap: 40px;
+  column-count: 3;
+  column-rule-color: #FF4500;
+}
+
+h2 {
+  text-align: right;
+  color: #20201D;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px white;
+}
+
+#image {
+    box-shadow: 10px 10px 5px grey;
+    width:450px;
+    height: 388px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#image2 {
+
+    width: 350;
+    height: 260;
+    padding-top: 20px;
+    opacity:0.55;
+    filter:Alpha(opacity=55); /* IE8 and earlier */
+}
+
+</style>
+</head>
+
+<body>
+
+  <div id="content">
+  <section>
+
+    <ul id="mainNav">
+
+      <li><a href="hw2-ec1.html" target="_self">Extra Credit 1</a></li>
+      <li><a href="hw2-ec2.html" target="_self">Extra Credit 2</a></li>
+
+    </ul>
+
+<br>
+
+
+  <h2>This page is an example of embeddded CSS styles</h2>
+
+
+<h3>This collection of ipsum has been split into 3 columns</h3>
+<div id="multicolumn">
+<p>
+  Ignore the squirrels, you'll never catch them anyway leave fur on owners clothes. Where is my slave? I'm getting hungry kitty scratches couch bad kitty plop down in the middle where everybody walks asdflkjaertvlkjasntvkjn (sits on keyboard) claws in your leg sit in box. I like big cats and i can not lie loves cheeseburgers refuse to leave cardboard box i am the best ask for petting. Use lap as chair stare out the window or poop in the plant pot when in doubt, wash scratch the furniture. Thinking longingly about tuna brine howl on top of tall thing. Lick the plastic bag sit in box bleghbleghvomit my furball really tie the room together, so sit in box. Play time get video posted to internet for chasing red dot yet curl into a furry donut, so lick sellotape. Hopped up on catnip kitty kitty or sit on human head nudges for sit on human yet fooled again thinking the dog likes me. Why must they do that if it smells like fish eat as much as you wish meoooow, cat snacks. Sweet beast human is washing you why halp oh the horror flee scratch hiss bite. Annoy kitten brother with poking put butt in owner's face Gate keepers of hell. Sit in window and stare oooh, a bird, yum. Kitty scratches couch bad kitty.
+</p>
+</div>
+
+
+<div id="image">
+<h3>This is Dumptruck with a box-shadow</h3>
+<img src="./assets/dumptruck.jpg" width="450" height="338" alt="Dumptruck!!!" title="Cat">
+
+</div>
+
+<br>
+
+<div id="image2">
+  <h3>This ewok has at a 55% gradient</h3>
+    <img src="./assets/ewok_interior.jpg" width="350" height="268" alt="Harold the Ewok" title="interior">
+</div>
+
+
+  <footer>
+
+  <p class="center">
+
+  <a href="https://jigsaw.w3.org/css-validator/check/referer">
+  <img style="border:5;width:64px;height:64px" src="./assets/html5_badge.png"
+  alt="HTML5"></a>
+
+
+
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+              src="http://jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS!">
+      </a>
+
+  </p>
+
+  </footer>
+
+</section>
+</div>
+  </body>
+  </html>

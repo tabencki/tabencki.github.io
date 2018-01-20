@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Asap+Condensed|Droid+Serif|Roboto+Condensed);
+
+body {
+background-color: #FFF;
+width:100%;
+}
+
+footer {
+    background-color: #454766 ;
+    height: 74px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+/* NAVIGATION */
+
+#mainNav {
+background-color: #454766  ;
+height: 50px;
+color: #ffffff;
+text-align: center;
+margin-top: 15px;
+margin-left: 75px;
+margin-right: 75px;
+}
+
+ul#mainNav {
+
+	padding: 10px;
+	list-style: none;
+	margin-top: 0px;
+	margin-bottom: 10px;
+
+
+
+}
+#mainNav li {
+	float: left;
+	width: 12em;
+  display: inline;
+  margin-left: 25px
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 14px;
+	border: 2px dashed #999999;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #454766  url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #7680F5 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #454766   url(home.png) no-repeat 5px 52%;
+}
+
+#main {
+  background-color: #CECFD5;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content {
+	width:950px;
+  background-image: url('wood.jpg');
+	margin: 0px auto; padding: 5px;
+  text-align: left; /* Counteract to IE/Win Hack */
+	border:1px dashed #333;
+
+         }
+h2 {
+
+color: #FFFAFA;
+text-align: center;
+margin-top: 15px;
+margin-left: 75px;
+margin-right: 75px;
+font-style:italic;; font-variant:normal; font-size:24pt; font-family:Impact
+         }
+
+h3 {
+
+color: #FFFAFA;
+text-align: center;
+margin-top: 15px;
+margin-left: 75px;
+margin-right: 75px;
+font-style:italic;; font-variant:normal; font-size:24pt;
+font-family: 'Times New Roman';
+                  }
+
+p.main  {
+font-family: 'Droid Serif', serif;
+font: 14pt;
+color: #011010;
+background: #14DAE0;
+text-indent: .333in;
+margin-left: 50px;
+margin-right: 75px;
+text-align: justify;
+border: dashed;
+padding: 15px;
+
+}
+
+
+p.epic  {
+font-family: 'Asap Condensed', sans-serif;
+font: 16pt;
+color: #E6DFDE;
+background: #671203  ;
+margin-left: 75px;
+margin-right: 30px;
+text-align: right;
+border: solid;
+padding: 15px;
+}
+
+p.epic a {
+  color: #ffffff;
+}
+
+p.wow {
+font-family: 'Roboto Condensed', sans-serif;
+font: 8pt;
+color: #DBDE2A;
+background: #2B2C15;
+text-indent: 1.25in;
+margin-left: 75px;
+margin-right: 75px;
+text-align: left;
+border: double;
+padding: 25px;
+}
+
+p.wow a {
+  color: #DBDE2A;
+}
+
+
+p.yolo  {
+font-family: 'helvetica';
+font: 18pt;
+color: #8B3E2F;
+background: #CDC5BF;
+text-indent: .25in;
+margin-left: 10px;
+margin-right: 10px;
+text-align: center;
+border: none;
+padding: 15px;
+}

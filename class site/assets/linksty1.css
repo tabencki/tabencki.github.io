@@ -1,0 +1,149 @@
+body
+      {margin-top: 20px; background-color: #000000;
+       text-align:center; /* Hack for IE/Win */
+      }
+
+
+#content {
+	width:950px;
+	margin: 0px auto; padding: 5px;
+        text-align: left; /* Counteract to IE/Win Hack */
+	border:1px dashed #333;
+	background-color:#eee
+         }
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 160px;
+
+}
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(home.png) no-repeat 5px 52%;
+}
+
+
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+h2 {
+
+background-image: url('background2.jpg');
+color: #FFFAFA;
+text-align: center;
+margin-top: 75px;
+margin-left: 75px;
+margin-right: 75px;
+font-weight: bold; font-style:italic;; font-variant:normal; font-size:24pt; font-family:Impact
+}
+
+
+p.main  {
+font: 14pt 'rebuchet MS';
+color: #8B3E2F;
+background: #CDC5BF;
+text-indent: .25in;
+margin-left: 75px;
+margin-right: 75px;
+text-align: justify;
+border: solid;
+padding: 15px;
+}
+
+
+p.lil {
+font-size: 16pt;
+font-variant: small-caps;
+text-align: center;
+font-weight: bold;
+margin-left: 140px;
+margin-right: 140px;
+color: #668B8B;
+background: #FFB6C1;
+}
+
+
+#new  {
+font-family: 'Verdana';
+padding: 25px;
+line-height: 32pt;
+border-style: ridge;
+border: 3px solid black;
+background-color: #deb887;
+font-size: 12pt;color: #ff0000;
+text-align: justify;
+font-weight: bold;
+margin-left: 150px;
+margin-right: 150px;
+width: 600px;
+      }
+
+
+
+p.newex{
+font-size: 14pt;
+font-variant: normal;
+text-align: left;
+font-weight: italic;
+margin-left: 175px;
+margin-right: 175px;
+color: #4B0082;
+background: #D8BFD8;
+}
+
+a {
+
+color: #a020f0; text-decoration: none;
+}
+
+
+a:hover { color:#8B2500;
+text-decoration: underline;
+background-color: lightblue;
+}
+
+
+address
+{
+font-family: Arial, serif;
+font-size: 24pt;
+font-weight: bold;
+color: #000000;
+}
+
+
+.center {text-align: center;}
