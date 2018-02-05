@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JT Tabencki |HW2</title>
+
+<!-- meta tags -->
+<meta name="keywords" content="JT Tabencki">
+<meta name="description" content="HW2 Part 2">
+<link rel="stylesheet" type="text/css" href="./assets/tabencki.css">
+<!-- get jquery library -->
+
+<script>
+function math()
+{
+
+var number1, number2, number3, n1, n2, n3, sum, avg, prod, small, large;
+
+number1 = document.forms["myform"].elements["num1"].value;
+number2 = document.forms["myform"].elements["num2"].value;
+number3 = document.forms["myform"].elements["num3"].value;
+
+n1 = parseInt(number1);
+n2 = parseInt(number2);
+n3 = parseInt(number3);
+
+sum = n1 + n2 + n3;
+avg = sum/3;
+product = n1*n2*n3;
+small = Math.min(n1, n2, n3);
+large = Math.max(n1, n2, n3);
+
+document.forms["myform"].elements["sum"].value = sum;
+document.forms["myform"].elements["avg"].value = avg;
+document.forms["myform"].elements["product"].value = product;
+document.forms["myform"].elements["small"].value = small;
+document.forms["myform"].elements["large"].value = large;
+
+}
+</script>
+</head>
+
+<body>
+    <div id="banner">
+      <br>
+      <h1>CNIT 133 - Interactive Web Pages</h1>
+      <p>JT Tabencki<p>
+    </div>
+
+  <nav id="navigation">
+    <ul>
+      <li class="navigation"><a href="hw2.html">HW 2 Home</a></li>
+      <li class="navigation"><a href="hw2-part1.html">Part 1</a></li>
+      <li class="current"><a href="">Part 2</a></li>
+      <li class="navigation"><a href="hw2-part3.html">Part 3</a></li>
+      <li class="navigation"><a href="hw2-part4.html">Part 4</a></li>
+      <li class="navigation"><a href="hw2-extra-credit.html">Extra Credit</a></li>
+   </ul>
+  </nav>
+
+<div id="content">
+  <BR>
+      <h1>Part 2 - Input 3 integers</h1>
+      <BR>
+  <form name="myform">
+<table>
+<tr>
+<td>First Number:</td>
+<td><input type="text" name="num1" size="12"></td>
+</tr>
+<tr>
+<td>Second Number:</td>
+<td><input type="text" name="num2" size="12"></td>
+</tr>
+<tr>
+<td>Third Number:</td>
+<td><input type="text" name="num3" size="12"></td>
+</tr>
+<tr>
+<td>Sum is:</td>
+<td><input type="text" name="sum" size="12" readonly></td>
+</tr>
+<tr>
+<td>Average is:</td>
+<td><input type="text" name="avg" size="12" readonly></td>
+</tr>
+<tr>
+<td>Product is:</td>
+<td><input type="text" name="product" size="12" readonly></td>
+</tr>
+<tr>
+<td>Smallet # is:</td>
+<td><input type="text" name="small" size="12" readonly></td>
+</tr>
+<tr>
+<td>Largest # is:</td>
+<td><input type="text" name="large" size="12" readonly></td>
+</tr>
+</table>
+<br>
+<input type="button" onclick="math()" value="SUBMIT">
+<input type="reset" value="RESET">
+</form>
+</div>
+
+    <footer>
+  <div id="email">
+      <a href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:64px;height:64px" src="./assets/html5_badge.png"
+                      alt="HTML5"></a>
+      | <a href="mailto:jtabenck@mail.ccsf.edu">JT Tabencki</a> | &copy; 2018
+
+      <script>
+      var dateModified = document.lastModified;
+      mydate = dateModified.slice(0,16);
+      document.write("Last updated: " + mydate);
+      </script>
+      </div>
+    </footer>
+</body>
+  </html>
