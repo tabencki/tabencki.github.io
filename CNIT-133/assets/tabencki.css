@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Asap+Condensed|Droid+Serif|Roboto+Condensed);
+/* clear default styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* my styling */
+body {
+background-color: #C4CED6;
+padding-left: 50px;
+padding-right: 50px;
+padding-bottom: 20px;
+font-family: 'Droid Serif', serif;
+width: 1200px;
+height: 1000px;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+}
+
+footer {
+    background-color: #313878;
+    width:800px;
+    height: 74px;
+    color: #ffffff;
+    text-align: center;
+		margin: 0 auto;
+    position:absolute;
+    left:0px;
+    right:0px;
+    top: 700px;
+}
+h1,h2,h3 {
+font-family: 'Droid Serif', serif;
+  text-align: center;
+  padding-bottom: 10px;
+}
+input
+{text-align: right;}
+
+p.center {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+button.fade{
+    background-color: #4C50AF; /* purple */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#fade-div {
+  width:203px;
+  height:100px;
+  color: white;
+  background-color: #4C50AF;
+  position:absolute;
+  left:10px;
+  right:0px;
+
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #313878;
+    border: solid 1px #c3c3c3;
+    background-color: #313878;
+    color: #ffffff;
+}
+/* ~~~~~~~~~ banner ~~~~~~~~~~ */
+
+#banner {
+    position:absolute;
+    left:0px;
+    right:0px;
+    top: 50px;
+    text-align: center;
+		margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+		width:800px;
+    height: 120px;
+    background-color: #313878;
+    text-shadow: 2px 2px #707070;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* ~~~~~~~~~ nav ~~~~~~~~~~ */
+#navigation {
+  position:absolute;
+  left:0px;
+  right:0px;
+  top: 175px;
+	margin: 5px auto;
+	width:800px;
+  background-color: #313878;
+  padding: 10px;
+  text-align: center;
+}
+	#navigation ul {
+		margin: 0px auto;
+		width: 750px;
+		list-style: none;
+		font-size: 16px;
+	}
+		#navigation li {
+      display: inline;
+		}
+			#navigation li a {
+				background: #313878;
+				padding: 10px 10px;
+				display: block;
+				color: #ffffff;
+				text-decoration: none;
+        display: inline;
+
+			}
+			#navigation li.current a {
+				background: #787C9E;
+			}
+			#navigation li a:hover {
+				color: #D3D5DB;
+			}
+
+/* ~~~~~~~~~ end nav ~~~~~~~~~~ */
+
+
+
+#content {
+position:absolute;
+left:0px;
+right:0px;
+top: 220px;
+padding: 10px;
+width:600px;
+height:600px;
+margin: 0 auto;
+}
+
+
+/* mailbox thumb positioning */
+#boxy {
+position: absolute;
+top: 155px;
+left: 260px;
+z-index: 40;
+border-radius: 25px;
+}
+
+/* dumptruck thumb positioning */
+#dumpy {
+position: absolute;
+top: 205px;
+left: 390px;
+z-index: 20;
+}
+
+#descrip {
+  position: absolute;
+  top: 455px;
+  left: 20px;
+}
+#descrip2 {
+  position: absolute;
+  top: 375px;
+  left: 310px;
+  font-style: italic;
+}
+
+#email a:link, #email a:visited
+			{
+				text-decoration: none;
+				color: #FFFFFF;
+			}
