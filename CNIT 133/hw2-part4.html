@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JT Tabencki |HW2</title>
+
+<!-- meta tags -->
+<meta name="keywords" content="JT Tabencki">
+<meta name="description" content="HW2!">
+<link rel="stylesheet" type="text/css" href="./assets/tabencki.css">
+
+
+</head>
+
+<body >
+    <div id="banner">
+      <br>
+      <h1>CNIT 133 - Interactive Web Pages</h1>
+      <p>JT Tabencki<p>
+    </div>
+
+    <nav id="navigation">
+      <ul>
+        <li class="navigation"><a href="hw2.html">HW 2 Home</a></li>
+        <li class="navigation"><a href="hw2-part1.html">Part 1</a></li>
+        <li class="navigation"><a href="hw2-part2.html">Part 2</a></li>
+        <li class="navigation"><a href="hw2-part3.html">Part 3</a></li>
+        <li class="current"><a href="">Part 4</a></li>
+        <li class="navigation"><a href="hw2-extra-credit.html">Extra Credit</a></li>
+     </ul>
+    </nav>
+
+<div id="content">
+  <BR>
+      <h1>Part 4 - Calculation Table</h1>
+        <BR>
+    <div id="compute">
+
+      <script>
+      document.write( "<table style='border: 1px solid black;'><tr> " + "<th style='border: 1px dotted white;'>Number</th> <th style='border: 1px dotted white;'>Square</th> <th style='border: 1px dotted white;'>Cube</th></tr>");
+      document.write( "<tr style='text-align:center;'><td style='border: 1px dotted white;'>" + 1 + "</td>" + "<td style='border: 1px dotted white;'>" + Math.pow(1,2) + "</td>" + "<td style='border: 1px dotted white;'>" +Math.pow(1,3) + "</td></tr>" );
+      document.write( "<tr style='text-align:center;'><td style='border: 1px dotted white;'>" + 2 + "</td>" + "<td style='border: 1px dotted white;'>" + Math.pow(2,2) + "</td>" + "<td style='border: 1px dotted white;'>" +Math.pow(2,3) + "</td></tr>" );
+      document.write( "<tr style='text-align:center;'><td style='border: 1px dotted white;'>" + 3 + "</td>" + "<td style='border: 1px dotted white;'>" + Math.pow(3,2) + "</td>" + "<td style='border: 1px dotted white;'>" +Math.pow(3,3) + "</td></tr>" );
+      document.write( "<tr style='text-align:center;'><td style='border: 1px dotted white;'>" + 4 + "</td>" + "<td style='border: 1px dotted white;'>" + Math.pow(4,2) + "</td>" + "<td style='border: 1px dotted white;'>" +Math.pow(4,3) + "</td></tr>" );
+      document.write( "<tr style='text-align:center;'><td style='border: 1px dotted white;'>" + 5 + "</td>" + "<td style='border: 1px dotted white;'>" + Math.pow(5,2) + "</td>" + "<td style='border: 1px dotted white;'>" +Math.pow(5,3) + "</td></tr>" );
+      document.write( "<tr style='text-align:center;'><td style='border: 1px dotted white;'>" + 6 + "</td>" + "<td style='border: 1px dotted white;'>" + Math.pow(6,2) + "</td>" + "<td style='border: 1px dotted white;'>" +Math.pow(6,3) + "</td></tr>" );
+      document.write( "</table>" );
+      </script>
+
+  </div>
+    </div>
+
+    <footer>
+  <div id="email">
+      <a href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:64px;height:64px" src="./assets/html5_badge.png"
+                      alt="HTML5"></a>
+
+      | <a href="mailto:jtabenck@mail.ccsf.edu">JT Tabencki</a> | &copy; 2018
+
+      <script>
+      var dateModified = document.lastModified;
+      mydate = dateModified.slice(0,16);
+      document.write("Last updated: " + mydate);
+      </script>
+      </div>
+    </footer>
+</body>
+  </html>

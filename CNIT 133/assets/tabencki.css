@@ -14,11 +14,11 @@ padding-bottom: 20px;
 font-family: 'Droid Serif', serif;
 width: 1200px;
 height: 1000px;
-background-image: url(both-cats-back.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-attachment: fixed;
 }
+
 footer {
     background-color: #313878;
     width:800px;
@@ -29,14 +29,51 @@ footer {
     position:absolute;
     left:0px;
     right:0px;
-    top: 650px;
+    top: 700px;
 }
 h1,h2,h3 {
 font-family: 'Droid Serif', serif;
   text-align: center;
   padding-bottom: 10px;
 }
+input
+{text-align: right;}
 
+p.center {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+button.fade{
+    background-color: #4C50AF; /* purple */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#fade-div {
+  width:203px;
+  height:100px;
+  color: white;
+  background-color: #4C50AF;
+  position:absolute;
+  left:10px;
+  right:0px;
+
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #313878;
+    border: solid 1px #c3c3c3;
+    background-color: #313878;
+    color: #ffffff;
+}
 /* ~~~~~~~~~ banner ~~~~~~~~~~ */
 
 #banner {
@@ -95,14 +132,16 @@ font-family: 'Droid Serif', serif;
 
 /* ~~~~~~~~~ end nav ~~~~~~~~~~ */
 
+
+
 #content {
 position:absolute;
 left:0px;
 right:0px;
 top: 220px;
 padding: 10px;
-width:800px;
-height:800px;
+width:600px;
+height:600px;
 margin: 0 auto;
 }
 

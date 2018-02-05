@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JT Tabencki |HW2</title>
+
+<!-- meta tags -->
+<meta name="keywords" content="JT Tabencki">
+<meta name="description" content="HW2!">
+<link rel="stylesheet" type="text/css" href="./assets/tabencki.css">
+<!-- get jquery library -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+
+  $(document).ready(function(){
+  $("#flip").click(function(){
+       $("#panel").slideToggle("slow");
+   });
+   $('#textfield').focus(function() {
+ 		$(this).css('background-color','yellow');
+ 	});
+});
+// Function for exchange rate computations //
+function exchange()
+{
+  //exchange rate variables
+  var bpr,cdr,er,jyr,mpr;
+  //value variables
+  var bp,cd,eu,jy,mp, usd;
+
+  usd = document.forms["myform"].elements["usd"].value;
+  bpr = 0.71;
+  cdr = 1.24;
+  er = 0.80;
+  jyr = 110.01;
+  mpr = 18.61;
+
+  bp = usd*bpr;
+  bp = bp.toFixed(2);
+  cd = usd*cdr;
+  cd = cd.toFixed(2);
+  eu = usd*er;
+  eu = eu.toFixed(2);
+  jy = usd*jyr;
+  jy = jy.toFixed(2);
+  mp = usd*mpr;
+  mp = mp.toFixed(2)
+
+//write the current exchange rates
+  document.forms["myform"].elements["bpr"].value = bpr;
+  document.forms["myform"].elements["cdr"].value = cdr;
+  document.forms["myform"].elements["er"].value = er;
+  document.forms["myform"].elements["bpr"].value = bpr;
+  document.forms["myform"].elements["jyr"].value = jyr;
+  document.forms["myform"].elements["mpr"].value = mpr;
+//write computations after usd inputs
+  document.forms["myform"].elements["bp"].value = bp;
+  document.forms["myform"].elements["cd"].value = cd;
+  document.forms["myform"].elements["eu"].value = eu;
+  document.forms["myform"].elements["jy"].value = jy;
+  document.forms["myform"].elements["mp"].value = mp;
+}
+</script>
+
+
+
+</head>
+
+<body>
+    <div id="banner">
+      <br>
+      <h1>CNIT 133 - Interactive Web Pages</h1>
+      <p>JT Tabencki<p>
+    </div>
+
+    <nav id="navigation">
+      <ul>
+        <li class="navigation"><a href="hw2.html">HW 2 Home</a></li>
+        <li class="navigation"><a href="hw2-part1.html">Part 1</a></li>
+        <li class="navigation"><a href="hw2-part2.html">Part 2</a></li>
+        <li class="navigation"><a href="hw2-part3.html">Part 3</a></li>
+        <li class="navigation"><a href="hw2-part4.html">Part 4</a></li>
+        <li class="current"><a href="">Extra Credit</a></li>
+     </ul>
+    </nav>
+
+<div id="content">
+  <BR>
+      <h1>Extra Credit - Exchange rates</h1>
+        <BR>
+
+          <div id="flip">Click here see instructions</div>
+          <div id="panel">
+            <p>The foreign exchange rates on February 4, 2018 </p>
+            <p>Enter a dollar amount in the table below to see the corresponding foreign exchange values</p>
+          </div>
+        <div>
+          <br>
+<form name="myform">
+      <table style="border: 1px solid gray;">
+<tbody>
+<tr>
+<th colspan="3">Monetary Exchange Rates</th>
+</tr>
+<tr>
+<th>Currency</th>
+<th>Rate</th>
+<th>Value</th>
+</tr>
+<tr>
+<td style="border: 1px dotted gray;">British Pound</td>
+<td style="border: 1px dotted gray;"><input type="text" name="bpr" size="12" disabled></td>
+<td style="border: 1px dotted gray;"><input type="text" name="bp" size="12" disabled></td>
+</tr>
+<tr>
+<td style="border: 1px dotted gray;">Canadian Dollar</td>
+<td style="border: 1px dotted gray;"><input type="text" name="cdr" size="12" disabled></td>
+<td style="border: 1px dotted gray;"><input type="text" name="cd" size="12" disabled></td>
+</tr>
+<tr>
+<td style="border: 1px dotted gray;">Euro</td>
+<td style="border: 1px dotted gray;"><input type="text" name="er" size="12" disabled></td>
+<td style="border: 1px dotted gray;"><input type="text" name="eu" size="12" disabled></td>
+</tr>
+<tr>
+<td style="border: 1px dotted gray;">Japanese Yen</td>
+<td style="border: 1px dotted gray;"><input type="text" name="jyr" size="12" disabled></td>
+<td style="border: 1px dotted gray;"><input type="text" name="jy" size="12" disabled></td>
+</tr>
+<tr>
+<td style="border: 1px dotted gray;">Mexican Peso</td>
+<td style="border: 1px dotted gray;"><input type="text" name="mpr" size="12" disabled></td>
+<td style="border: 1px dotted gray;"><input type="text" name="mp" size="12" disabled></td>
+</tr>
+<tr>
+<td style="border: 1px dotted gray;" colspan="2"><strong>Enter Amount of U.S. Dollars</strong></td>
+<td style="border: 1px dotted gray;"><input name="usd" id ="textfield" type="text"  size="12"></td>
+</tr>
+</tbody>
+</table>
+</form>
+
+<input type="button" onclick="exchange()" value="SUBMIT">
+<input type="reset" value="RESET">
+
+
+
+      </div>
+
+</div>
+    <footer>
+  <div id="email">
+      <a href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:64px;height:64px" src="./assets/html5_badge.png"
+                      alt="HTML5"></a>
+
+      | <a href="mailto:jtabenck@mail.ccsf.edu">JT Tabencki</a> | &copy; 2018
+
+      <script>
+      var dateModified = document.lastModified;
+      mydate = dateModified.slice(0,16);
+      document.write("Last updated: " + mydate);
+      </script>
+      </div>
+    </footer>
+</body>
+  </html>
