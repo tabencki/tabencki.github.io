@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JT Tabencki | HW3 </title>
+
+<!-- meta tags -->
+<meta name="keywords" content="JT Tabencki">
+<meta name="description" content="HW3 Part 4!">
+<link rel="stylesheet" type="text/css" href="./assets/tabencki.css">
+<!-- get jquery library -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- the following script is needed for jquery validation of input -->
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+
+<script>
+var integer1,integer2,attempt,answer;
+
+//function to generate the question//
+function what_is() {
+
+integer1 = Math.floor(Math.random() * 10);
+integer2 = Math.floor(Math.random() * 10);
+
+document.getElementById("question-area").innerHTML = "What is " + integer1 + " times "+ integer2 + "?";
+
+answer = integer1 * integer2;
+
+/* document.getElementById("test-answer").innerHTML = "Answer is " + answer + "<---"; */
+}
+
+//pull in answer attempt and compare to calcuated answer//
+function check_answer() {
+
+attempt = document.forms["myform"].elements["attempt"].value;
+
+if( attempt == answer ) {
+      /* if correct, prompts user if they would like to another problem */
+    if(confirm("Very good! \nWould you like to do another problem?")) {
+        window.location.reload();
+      } else {
+        /* if user says no, ends loop */
+        document.getElementById("results").innerHTML = "All Done!";
+        document.forms["myform"].elements["attempt"].value = "";
+      }
+} else if (attempt != answer) {
+  /* if use is incorrect, prompts user for another attempt */
+  document.getElementById("results").innerHTML = "No. Please try again.";
+  document.forms["myform"].elements["attempt"].value = "";
+}
+}
+
+</script>
+
+
+
+</head>
+
+<body onload="what_is()">
+    <div id="banner">
+      <br>
+      <h1>CNIT 133 - Interactive Web Pages</h1>
+      <p>JT Tabencki<p>
+    </div>
+
+  <nav id="navigation">
+    <ul>
+      <li class="navigation"><a href="hw3.html">HW 3 Home</a></li>
+      <li class="navigation"><a href="hw3-part1.html">Part 1</a></li>
+      <li class="navigation"><a href="hw3-part2.html">Part 2</a></li>
+      <li class="navigation"><a href="hw3-part3.html">Part 3</a></li>
+      <li class="current"><a href="">Part 4</a></li>
+   </ul>
+  </nav>
+
+<div id="content">
+  <BR>
+      <h1>Part 4 - Computers can be Educational!</h1>
+      <BR>
+
+
+
+        Question:
+        <p id="question-area"></p>
+        <p id="test-answer"></p>
+        <br>
+        <form id="myform" name="myform">
+          <label id="answer">Your Answer Madam / Sir?</label>
+          <br>
+          <br>
+          <p><input type="text" id="attempt" name="attempt" size="14" autofocus></p>
+        <br>
+        <input type="button" onclick="check_answer()" value="SUBMIT">
+        <input type="reset" value="RESET" onClick="window.location.reload();"><br><br>
+        </form>
+        <h3 id="results">The result will appear here</h3>
+
+
+
+
+
+    </div>
+    <footer>
+  <div id="email">
+      <a href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:64px;height:64px" src="./assets/html5_badge.png"
+                      alt="HTML5"></a>
+      | <a href="mailto:jtabenck@mail.ccsf.edu">JT Tabencki</a> | &copy; 2018
+
+      <script>
+      var dateModified = document.lastModified;
+      mydate = dateModified.slice(0,16);
+      document.write("Last updated: " + mydate);
+      </script>
+      </div>
+    </footer>
+</body>
+  </html>

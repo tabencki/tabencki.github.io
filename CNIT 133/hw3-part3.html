@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JT Tabencki | HW3</title>
+
+<!-- meta tags -->
+<meta name="keywords" content="JT Tabencki">
+<meta name="description" content="HW3 Part 3">
+<link rel="stylesheet" type="text/css" href="./assets/tabencki.css">
+<!-- get jquery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+var celsius_v, fahrenheit_v
+
+// calcuate celsius to fahrenheit//
+
+function celsius()
+{
+  /*F = (9/5 * C) + 32*/
+celsius_v = document.forms["Celsius_to_Fahrenheit"].elements["celsius_v"].value;
+
+document.getElementById("c_error").innerHTML = "";
+document.getElementById("f_error").innerHTML = "";
+
+if ( isNaN(celsius_v) )
+{
+document.getElementById("c_error").innerHTML = "Please input a numeric value";
+}
+
+fahrenheit_v = (((9/5) * celsius_v) + 32);
+
+fahrenheit_v = Math.round(fahrenheit_v);
+
+document.forms["Celsius_to_Fahrenheit"].elements["fahrenheit_v"].value = fahrenheit_v;
+
+}
+
+// calcuate fahrenheit to celsius //
+function fahrenheit()
+{
+ /*C = 5/9 * (F - 32) */
+fahrenheit_v = document.forms["Celsius_to_Fahrenheit"].elements["fahrenheit_v"].value;
+
+document.getElementById("c_error").innerHTML = "";
+document.getElementById("f_error").innerHTML = "";
+
+if ( isNaN(fahrenheit_v) )
+{
+document.getElementById("f_error").innerHTML = "Please input a numeric value";
+}
+
+celsius_v = (5/9) * (fahrenheit_v - 32);
+celsius_v = Math.round(celsius_v);
+
+document.forms["Celsius_to_Fahrenheit"].elements["celsius_v"].value = celsius_v;
+}
+
+</script>
+</head>
+
+<body>
+    <div id="banner">
+      <br>
+      <h1>CNIT 133 - Interactive Web Pages</h1>
+      <p>JT Tabencki<p>
+    </div>
+
+  <nav id="navigation">
+    <ul>
+      <li class="navigation"><a href="hw3.html">HW 2 Home</a></li>
+      <li class="navigation"><a href="hw3-part1.html">Part 1</a></li>
+      <li class="navigation"><a href="hw3-part2.html">Part 2</a></li>
+      <li class="current"><a href="">Part 3</a></li>
+      <li class="navigation"><a href="hw3-part4.html">Part 4</a></li>
+   </ul>
+  </nav>
+
+<div id="content">
+  <BR>
+      <h1>Part 3 - Celsius to Fahrenheit</h1>
+        <BR>
+          <form name="Celsius_to_Fahrenheit">
+
+          <p>Celsius Value:
+          <input type="text" id="celsius_v" name="celsius_v" size="12"></p>
+          <div id="c_error"> </div>
+          <br>
+          <input type="button" onclick="celsius()" value="Celsius to Fahrenheit">
+
+          <br>
+            <br>
+          <p>Fahrenheit Value:
+           <input type="text" id="fahrenheit_v" name="fahrenheit_v" size="12"></p>
+           <div id="f_error"> </div>
+          <br>
+
+          <input type="button" onclick="fahrenheit()" value="Fahrenheit to Celsius">
+          <br>
+          <br>
+          <input type="reset" value="Reset this thing" onClick="window.location.reload()">
+          </form>
+
+<br>
+
+<br>
+</div>
+
+<footer>
+  <div id="email">
+      <a href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:64px;height:64px" src="./assets/html5_badge.png"
+                      alt="HTML5"></a>
+      | <a href="mailto:jtabenck@mail.ccsf.edu">JT Tabencki</a> | &copy; 2018
+
+      <script>
+      var dateModified = document.lastModified;
+      mydate = dateModified.slice(0,16);
+      document.write("Last updated: " + mydate);
+      </script>
+      </div>
+    </footer>
+
+</body>
+  </html>

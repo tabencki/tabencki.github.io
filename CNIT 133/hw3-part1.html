@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JT Tabencki | HW3</title>
+
+<!-- meta tags -->
+<meta name="keywords" content="JT Tabencki">
+<meta name="description" content="HW3 Part 1">
+<link rel="stylesheet" type="text/css" href="./assets/tabencki.css">
+<!-- get jquery library -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- the following script is needed for jquery validation of input -->
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+<script>
+function grading()
+{
+
+var hwAvg, midExam, finalExam, acr, finalAvg, letterGrade;
+
+hwAvg = document.forms["myform"].elements["hwAvg"].value;
+midExam = document.forms["myform"].elements["midExam"].value;
+finalExam = document.forms["myform"].elements["finalExam"].value;
+acr = document.forms["myform"].elements["acr"].value;
+
+
+finalAvg = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * acr)
+
+finalAvg = parseInt(finalAvg);
+
+if (finalAvg >= 90) {
+  letterGrade = "A"
+} else if (finalAvg >= 80) {
+  letterGrade = "B"
+} else if (finalAvg >= 70) {
+  letterGrade = "C"
+} else if (finalAvg >= 60) {
+  letterGrade = "D"
+} else  {
+  letterGrade = "F"
+}
+
+if (finalAvg >= 70) {
+  document.forms["myform"].elements["finalAvg"].value =
+ ("Your Final Grade Average is... " + finalAvg + "   \nYour final grade is... " + letterGrade);
+} else {
+  document.forms["myform"].elements["finalAvg"].value =
+  ("Your Final Grade Average is... " + finalAvg + "   \nYour final grade is... " + letterGrade +
+  " \nStudent must retake the course (sorry).");
+}
+
+}
+// Function for integer validation //
+$(document).ready(function(){
+    $("#myform").validate({
+
+	  // Rules for each input item
+	  rules:
+            {
+		hwAvg: { required: true, number: true, min: 0, max: 100},
+                midExam: { required: true, number: true, min: 0, max: 100},
+                finalExam: { required: true, number: true, min: 0, max: 100},
+                acr: { required: true, number: true, min: 0, max: 100}
+            },
+
+messages: {
+
+ hwAvg:  "Please enter a number between 0 and 100",
+ midExam: "Please enter a number between 0 and 100",
+ finalExam:  "Please enter a number between 0 and 100",
+ acr: "Please enter a number between 0 and 100",
+         },
+
+errorPlacement: function(error, element) {
+if ( element.is(":text")) {
+error.appendTo( element.parent());
+} else {
+error.insertAfter(element);
+}
+}
+	});
+    });
+
+// Function for show / hide //
+$(document).ready(function(){
+    $("#panel").hide();
+$("#flip").click(function(){
+     $("#panel").slideToggle("slow");
+ });
+ $('#textfield').focus(function() {
+  $(this).css('background-color','#787C9E');
+});
+});
+
+</script>
+
+
+
+</head>
+
+<body>
+    <div id="banner">
+      <br>
+      <h1>CNIT 133 - Interactive Web Pages</h1>
+      <p>JT Tabencki<p>
+    </div>
+
+  <nav id="navigation">
+    <ul>
+      <li class="navigation"><a href="hw3.html">HW 3 Home</a></li>
+      <li class="current"><a href="">Part 1</a></li>
+      <li class="navigation"><a href="hw3-part2.html">Part 2</a></li>
+      <li class="navigation"><a href="hw3-part3.html">Part 3</a></li>
+      <li class="navigation"><a href="hw3-part4.html">Part 4</a></li>
+   </ul>
+  </nav>
+
+<div id="content">
+  <BR>
+      <h1>Part 1 - Student Grades</h1>
+      <BR>
+
+      <form id="myform" name="myform">
+          <label for="hwAvg">Enter your Homework Average Score: </label>
+          <p><input type="text" id="hwAvg" name="hwAvg" size="12" autofocus><br>
+          </p>
+          <label for="hwAvg">Enter your Midterm Exam Score: </label>
+          <p><input type="text" id="midExam" name="midExam" size="12"><br>
+          </p>
+          <label for="hwAvg">Enter your Final Exam Score: </label>
+          <p><input type="text" id="finalExam" name="finalExam" size="12"><br>
+          </p>
+          <label for="hwAvg">Enter your ACR Score: </label>
+          <p><input type="text" id="acr" name="acr" size="12"><br>
+          </p>
+        <br>
+        <input type="button" onclick="grading()" value="SUBMIT">
+        <input type="reset" value="RESET" onClick="window.location.reload();"><br><br>
+
+        Grades: <textarea name="finalAvg" readonly cols="60" rows="5"></textarea>
+
+  </form>
+
+<BR>
+<BR>
+        <div id="flip">Click here to see instructions</div>
+        <div id="panel">
+          <p>The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers)'. Calculate the student's final average according to the formula: final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * ACR).</p>
+        </div>
+
+    </div>
+    <footer>
+  <div id="email">
+      <a href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:64px;height:64px" src="./assets/html5_badge.png"
+                      alt="HTML5"></a>
+      | <a href="mailto:jtabenck@mail.ccsf.edu">JT Tabencki</a> | &copy; 2018
+
+      <script>
+      var dateModified = document.lastModified;
+      mydate = dateModified.slice(0,16);
+      document.write("Last updated: " + mydate);
+      </script>
+      </div>
+    </footer>
+</body>
+  </html>

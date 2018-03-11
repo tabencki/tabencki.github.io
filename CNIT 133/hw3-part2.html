@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JT Tabencki | HW3</title>
+
+<!-- meta tags -->
+<meta name="keywords" content="JT Tabencki">
+<meta name="description" content="HW3 Part 2">
+<link rel="stylesheet" type="text/css" href="./assets/tabencki.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!-- get jquery library -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- functions -->
+<script>
+$( function() {
+   $( document ).tooltip();
+ } );
+ </script>
+ <script>
+ function getThatmoney()
+ {
+
+ var num_item1, num_item2, num_item3, num_item4,
+    num_item1_total, num_item2_total, num_item3_total, num_item4_total,
+    int_item1, int_item2, int_item3, int_item4,
+    total_item1,total_item2,total_item3,total_item4,
+    final_total, salary;
+
+// Pull in number of items sold from form //
+
+ num_item1 = document.forms["salesperson_total"].elements["num_item1"].value;
+ num_item2 = document.forms["salesperson_total"].elements["num_item2"].value;
+ num_item3 = document.forms["salesperson_total"].elements["num_item3"].value;
+ num_item4 = document.forms["salesperson_total"].elements["num_item4"].value;
+
+// confirm integers are being entered //
+
+
+if ( isNaN(num_item1) )
+{
+window.alert("Inputted value " + num_item1 + " is Not an integer - please try again");
+}
+if ( isNaN(num_item2) )
+{
+window.alert("Inputted value " + num_item2 + " is Not an integer - please try again");
+}
+ if( isNaN(num_item3) )
+{
+window.alert("Inputted value " + num_item3 + " is Not an integer - please try again");
+}
+ if( isNaN(num_item3) )
+{
+window.alert("Inputted value " + num_item3 + " is Not an integer - please try again");
+}
+ if( isNaN(num_item4) )
+{
+window.alert("Inputted value " + num_item4 + " is Not an integer - please try again");
+}
+
+// convert to integers //
+ int_item1 = parseInt(num_item1);
+ int_item2 = parseInt(num_item2);
+ int_item3 = parseInt(num_item3);
+ int_item4 = parseInt(num_item4);
+
+// calcuate totals //
+ total_item1 = 239.99 * int_item1;
+ total_item2 = 129.75 * int_item2;
+ total_item3 =  99.95 * int_item3;
+ total_item4 = 350.89 * int_item4;
+ final_total = total_item1 + total_item2 + total_item3 + total_item4;
+ salary = 200 + (.09 * final_total)
+
+//clean up ouputs to show only 2 decimals/
+ total_item1 = total_item1.toFixed(2);
+ total_item2 = total_item2.toFixed(2);
+ total_item3 = total_item3.toFixed(2);
+ total_item4 = total_item4.toFixed(2);
+ final_total = final_total.toFixed(2);
+ salary =  salary.toFixed(2);
+
+//ouputs //
+ document.forms["salesperson_total"].elements["int_item1"].value = int_item1;
+ document.forms["salesperson_total"].elements["int_item2"].value = int_item2;
+ document.forms["salesperson_total"].elements["int_item3"].value = int_item3;
+ document.forms["salesperson_total"].elements["int_item4"].value = int_item4;
+
+ document.forms["salesperson_total"].elements["total_item1"].value = total_item1;
+ document.forms["salesperson_total"].elements["total_item2"].value = total_item2;
+ document.forms["salesperson_total"].elements["total_item3"].value = total_item3;
+ document.forms["salesperson_total"].elements["total_item4"].value = total_item4;
+
+ document.forms["salesperson_total"].elements["final_total"].value = final_total;
+ document.forms["salesperson_total"].elements["salary"].value = salary;
+}
+
+ </script>
+
+</head>
+
+<body>
+    <div id="banner">
+      <br>
+      <h1>CNIT 133 - Interactive Web Pages</h1>
+      <p>JT Tabencki<p>
+    </div>
+
+  <nav id="navigation">
+    <ul>
+      <li class="navigation"><a href="hw3.html">HW 3 Home</a></li>
+      <li class="navigation"><a href="hw3-part1.html">Part 1</a></li>
+      <li class="current"><a href="">Part 2</a></li>
+      <li class="navigation"><a href="hw3-part3.html">Part 3</a></li>
+      <li class="navigation"><a href="hw3-part4.html">Part 4</a></li>
+   </ul>
+  </nav>
+
+<div id="content">
+  <BR>
+      <h1>Part 2 - Sales Commisions</h1>
+      <BR>
+        <form name="salesperson_total">
+
+        Salesperson: <input type="text" name="sp" size="20"
+        title="Please make sure that the salesperson's name is spelled correctly">
+        <br>
+        <br>
+        <p>Input the quantity sold for each item number:</p>
+        Item 1: <input class="t" type="text" id="num_item1" name="num_item1" size="8"><br>
+        Item 2: <input class="t" type="text" id="num_item2" name="num_item2" size="8"><br>
+        Item 3: <input class="t" type="text" id="num_item3" name="num_item3" size="8"><br>
+        Item 4: <input class="t" type="text" id="num_item4" name="num_item4" size="8"><br><br>
+        <input type="button" onclick="getThatmoney()" value="SUBMIT">
+        <input type="reset" value="RESET" onClick="window.location.reload();"><br><br>
+
+
+        <table>
+        <tr><th>Item #</th><th>Price</th><th>Number Sold</th><th>Total</th></tr>
+
+        <tr><td>1</td><td>$239.99</td><td><input type="text" class="t" name="int_item1" readonly ></td>
+        <td><input type="text"  class="t" name="total_item1"></td></tr>
+        <tr><td>2</td><td>$129.75</td><td><input type="text" class="t" name="int_item2" readonly ></td>
+        <td><input type="text"  class="t" name="total_item2" readonly ></td></tr>
+        <tr><td>3</td><td>$99.95</td><td><input type="text" class="t" name="int_item3" readonly ></td>
+        <td><input type="text"  class="t" name="total_item3" readonly ></td></tr>
+        <tr><td>4</td><td>$350.89</td><td><input type="text" class="t" name="int_item4" readonly ></td>
+        <td><input type="text" class="t" name="total_item4" readonly ></td></tr>
+        <tr><td colspan="3">Total Amount Sold:</td><td><input type="text" class="t" name="final_total" readonly ></td></tr>
+        <tr><td colspan="3">Total Weekly Earnings:</td><td><input type="text"  class="t" name="salary" readonly ></td></tr>
+        </table>
+
+        </form>
+        <br>
+</div>
+
+    <footer>
+  <div id="email">
+      <a href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:64px;height:64px" src="./assets/html5_badge.png"
+                      alt="HTML5"></a>
+      | <a href="mailto:jtabenck@mail.ccsf.edu">JT Tabencki</a> | &copy; 2018
+
+      <script>
+      var dateModified = document.lastModified;
+      mydate = dateModified.slice(0,16);
+      document.write("Last updated: " + mydate);
+      </script>
+      </div>
+    </footer>
+</body>
+  </html>
